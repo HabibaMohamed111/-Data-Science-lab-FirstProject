@@ -20,12 +20,12 @@ Data columns (total 6 columns):
 dtypes: float64(1), object(5)
 memory usage: 601.7+ KB
 
-   property_type 	place_with_parent_names	    region	           lat-lon	           area_m2	      price_usd
-0	apartment	 |Brasil|Alagoas|Maceió|	   Northeast	-9.6443051,-35.7088142	    110.0	       $187,230.85
-1	apartment	 |Brasil|Alagoas|Maceió|       Northeast	-9.6430934,-35.70484	    65.0	       $81,133.37
-2	house	     |Brasil|Alagoas|Maceió|	   Northeast	-9.6227033,-35.7297953	    211.0	       $154,465.45
-3	apartment	 |Brasil|Alagoas|Maceió|	   Northeast	-9.622837,-35.719556	     99.0	       $146,013.20
-4	apartment	 |Brasil|Alagoas|Maceió|       Northeast	-9.654955,-35.700227	     55.0	       $101,416.71
+   property_type 	place_with_parent_names	          region	           lat-lon	           area_m2	      price_usd
+0	apartment	 |Brasil|Alagoas|Maceió|	   Northeast	   -9.6443051,-35.7088142	    110.0	       $187,230.85
+1	apartment	 |Brasil|Alagoas|Maceió|           Northeast	   -9.6430934,-35.70484	            65.0	       $81,133.37
+2	house	         |Brasil|Alagoas|Maceió|	   Northeast	   -9.6227033,-35.7297953	    211.0	       $154,465.45
+3	apartment	 |Brasil|Alagoas|Maceió|	   Northeast	   -9.622837,-35.719556	            99.0	       $146,013.20
+4	apartment	 |Brasil|Alagoas|Maceió|           Northeast	   -9.654955,-35.700227	             55.0	       $101,416.71
 
 #_____________________________________________________________________________________________________________________________
 # Drop all rows with NaN values from the DataFrame df1.
@@ -79,12 +79,12 @@ df1.head()
 
 # output
 
-	property_type	 place_with_parent_names	region	       lat-lon	              area_m2	    price_usd	    lat         	lon	        state
-0	apartment	   |Brasil|Alagoas|Maceió|	  Northeast	   -9.6443051,-35.7088142	  110.0	       $187,230.85	   -9.644305	-35.708814   	Alagoas
-1	apartment	   |Brasil|Alagoas|Maceió|	  Northeast	   -9.6430934,-35.70484	       65.0	        $81,133.37	   -9.643093	-35.704840	    Alagoas
-2	house	       |Brasil|Alagoas|Maceió|    Northeast	   -9.6227033,-35.7297953	   211.0	    $154,465.45	   -9.622703	-35.729795	    Alagoas
-3	apartment	   |Brasil|Alagoas|Maceió|	  Northeast	   -9.622837,-35.719556	       99.0	        $146,013.20	   -9.622837	-35.719556	    Alagoas
-4	apartment	   |Brasil|Alagoas|Maceió|	  Northeast	   -9.654955,-35.700227	       55.0	        $101,416.71	   -9.654955	-35.700227  	Alagoas
+	property_type	 place_with_parent_names	   region	       lat-lon	                 area_m2	  price_usd	      lat         lon	        state
+0	apartment	   |Brasil|Alagoas|Maceió|	  Northeast	   -9.6443051,-35.7088142	   110.0	  $187,230.85	   -9.644305	-35.708814   	Alagoas
+1	apartment	   |Brasil|Alagoas|Maceió|	  Northeast	   -9.6430934,-35.70484	           65.0	          $81,133.37	   -9.643093	-35.704840	Alagoas
+2	house	           |Brasil|Alagoas|Maceió|        Northeast	   -9.6227033,-35.7297953	   211.0	  $154,465.45	   -9.622703	-35.729795      Alagoas
+3	apartment	   |Brasil|Alagoas|Maceió|	  Northeast	   -9.622837,-35.719556	           99.0	          $146,013.20	   -9.622837	-35.719556      Alagoas
+4	apartment	   |Brasil|Alagoas|Maceió|	  Northeast	   -9.654955,-35.700227	           55.0	          $101,416.71	   -9.654955	-35.700227  	Alagoas
 #__________________________________________________________________________________________________________________________________________________________
 #  Transform the "price_usd" column of df1 so that all values are floating-point numbers instead of strings
 
